@@ -1,10 +1,7 @@
 body {
     background-image: url(https://www.peepso.com/wp-content/uploads/2015/10/code.jpg);
     background-size: cover;
-    /* Esto hará que la imagen cubra todo el contenedor */
-
     background-position: center center;
-    /* Esto asegura que la imagen esté centrada */
     font-family: sans-serif;
     margin: 0;
     width: 100%;
@@ -104,4 +101,16 @@ textarea,select {
 input[type="submit"]:hover {
     cursor: pointer;
     background-color: rgba(75, 90, 105, 1);
+}
+
+@media (max-width: 768px) {
+
+    /* Cambiar 768px según la medida que desees */
+    body,
+    input,
+    textarea,
+    select {
+        font-size: 10px;
+        /* O el tamaño que encuentres adecuado */
+    }
 }
