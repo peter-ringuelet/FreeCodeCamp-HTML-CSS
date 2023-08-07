@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Consultas</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="color-fondo">
+        <div class="formulario">
+            <h1 id="title">Consultas</h1>
+            <p id="description">Completa con tus datos y en breve recibiras un correo</p>
+            <hr>
+            <form id="survey-form">
+                <label class="comienzo" id="name-label">Nombre y apellido: <input id="name" type="text"
+                        placeholder="Ingrese su nombre y apellido" required /></label>
+                <label class="comienzo" id="email-label">Mail: <input id="email" type="email"
+                        placeholder="Ingrese su correo personal" required /></label>
+                <label class="comienzo" id="number-label">Numero de telefono(opcional): <input id="number" type="number"
+                        min="1000000" max="999999999999"
+                        placeholder="Ingrese su numero de telefono sin espacios ni signos" /></label>
+                <label class="comienzo">Tipo de trabajo:
+                    <label class="opciones"><input type="radio" name="tipo-trabajo" value="1" class="inline" /> Remoto</label>
+                    <label class="opciones"><input type="radio" name="tipo-trabajo" value="2" class="inline" /> Presencial</label>
+                </label>
+                <label class="comienzo">Que opcion describe tu rol en la empresa?
+                    <select id="dropdown">
+                        <option>(selecciona una)</option>
+                        <option>Programador</option>
+                        <option>Hacker</option>
+                        <option>Limpieza</option>
+                        <option>No soy empleado</option>
+                    </select>
+                </label>
+                <label class="comienzo">En caso que la consulta este relacionada con alguna/s de las siguientes
+                    opciones, marquela/s:
+                    <label class="opciones"><input type="checkbox" value="1" class="inline" />Tiempo de trabajo</label>
+                    <label class="opciones"><input type="checkbox" value="2" class="inline" />Consignas</label>
+                    <label class="opciones"><input type="checkbox" value="3" class="inline" />Errores y Depuración (Debugging)</label>
+                    <label class="opciones"><input type="checkbox" value="4" class="inline" />Normas</label>
+                    <label class="opciones"><input type="checkbox" value="5" class="inline" />Seguridad</label>
+                    <label class="opciones"><input type="checkbox" value="6" class="inline" />Documentación</label>
+                    <label class="opciones"><input type="checkbox" value="7" class="inline" />Salario extra</label>
+                </label>
+                <label class="comienzo">Use este espacio para profundizar su consulta:
+                    <textarea rows="10" placeholder="Ingrese su consulta"></textarea>
+                </label>
+                <input type="submit" id="submit" value="Enviar"/>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

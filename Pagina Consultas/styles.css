@@ -1,0 +1,107 @@
+body {
+    background-image: url(https://www.peepso.com/wp-content/uploads/2015/10/code.jpg);
+    background-size: cover;
+    /* Esto hará que la imagen cubra todo el contenedor */
+
+    background-position: center center;
+    /* Esto asegura que la imagen esté centrada */
+    font-family: sans-serif;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    color: white;
+    font-size: 20px;
+}
+
+.color-fondo {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    background-color: rgba(25, 40, 55, 0.6);
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.formulario {
+    width: 80vw;
+    background-color: rgba(25, 40, 55, 0.95);
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.2);
+    padding: 2em;
+    max-width: 800px;
+    margin-top: 30px;
+}
+
+h1,
+p {
+    margin: auto;
+    text-align: center;
+}
+
+hr {
+    height: 2px;
+    background-color: #FAFAFA;
+    border-color: #FAFAFA;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+}
+
+input,
+textarea {
+    background-color: rgba(15, 30, 45);
+    border: 1px solid rgba(15, 30, 45);
+    color: #ffffff;
+}
+
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+
+.comienzo {
+    padding-top: 25px;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: rgba(15, 30, 45);
+    border-color: white;
+    min-width: 300px;
+    min-height: 50px;
+    transition: background-color 0.3s ease;
+}
+
+
+
+input,
+textarea,select {
+    font-size: 20px;
+}
+
+.opciones{
+    margin: 0;
+    padding: 0;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: rgba(75, 90, 105, 1);
+}
